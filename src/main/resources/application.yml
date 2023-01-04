@@ -1,0 +1,71 @@
+server:
+  servlet:
+    session:
+      timeout: 30m
+  port: 8080
+          
+#server.port=${PORT:8080}  
+
+# Launch the default browser when starting the application in development mode
+vaadin:
+  launch-browser: true
+   
+# Para mejorar el rendimiento durante el desarrollo.
+# Para obtener más información, https://vaadin.com/docs/flow/spring/tutorial-spring-configuration.html#special-configuration-parameters
+  whitelisted-packages: com.vaadin,org.vaadin,dev.hilla,com.ean.promo
+  
+spring:
+  jpa:
+    properties: 
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        #jdbc:
+          #lob:
+            #non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. 
+#Explicitly configure spring.jpa.open-in-view to disable this warning 
+#Esto deshabilitará OSIV para que pueda manejar LazyInitializationException de la manera correcta    
+    open-in-view: false
+  datasource:
+    #LOCAL
+    #url: jdbc:postgresql://localhost:5432/db_nikbar
+    #username: postgres
+    #password: Minotauro717
+    #RAILWAY
+    url: jdbc:postgresql://containers-us-west-67.railway.app:7978/railway
+    username: postgres
+    password: NgsopPdyOR4O7zvORywK
+    
+  sql:
+    init:
+      mode: always
+
+#Cannot find template location: classpath:/templates/ (please add some templates, check your Mustache configuration, 
+#or set spring.mustache.check-template-location=false)    
+  mustache:
+    check-template-location: false
+   
+  mvc:
+    format:
+      date: 'dd/MM/yyyy'
+      date-time: 'dd/MM/yyyy HH:mm:ss'
+      
+  web:
+    locale: es_ES
+#Para que me deje subir archivos hasta 10 MB    
+  servlet:
+    multipart: 
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+      
+logging:
+  level:
+    root: warn
+    
+#logging.level.org.atmosphere = warn
+#spring.jpa.defer-datasource-initialization = true
+

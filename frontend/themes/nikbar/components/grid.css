@@ -1,0 +1,10 @@
+@media (max-width: 479px) {
+  :host([theme~="mobile"]) #header {
+    display: none;
+    padding-bottom: 100px;
+  }
+
+  :host([theme~="mobile"]:not([theme~="no-border"])) {
+    border: none;
+  }
+}

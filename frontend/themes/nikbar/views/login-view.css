@@ -1,0 +1,36 @@
+[part="brand"] {
+	background-image: url(images/nikbar_logo.png);
+	background-position: center;
+	background-size: cover;
+}
+
+[part="backdrop"] {
+    background-image: url(images/nikbar_fondo.jpg);
+    background-size: cover;
+}
+
+/*[part="overlay"] {
+        background: lime;
+        background-color: green;
+      }
+
+      [part="content"] {
+      background: blue;
+        background-color: aqua;
+      }
+
+      [part="card"] {
+        background: blue;
+background-color: aqua;
+      }
+
+      [part="brand"] {
+        background-color: red;
+        background: blue;
+      }
+      
+      [part="description"] {
+        background-color: red;
+        background: blue;
+        color: green;
+      }*/

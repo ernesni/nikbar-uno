@@ -1,3 +1,53 @@
 @import url('./main-layout.css');
 @import url('./views/person-form-view.css');
 @import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+@import './views/login-view.css';
+
+@import './formato/app-layout.css';
+@import './formato/shared-styles.css';
+@import './formato/styles_base.css';
+
+@import './components/app-bar.css';
+@import './components/brand-expression.css';
+@import './components/details-drawer.css';
+@import './components/navi-drawer.css';
+@import './components/navi-item.css';
+@import './components/navi-menu.css';
+@import './components/tab-bar.css';
+@import './components/view-frame.css';
+@import './components/card-list-view.css';
+@import './components/grid.css';
+
+@import './misc/box-shadow-borders.css';
+
+@import './lumo/border-radius.css';
+@import './lumo/icon-size.css';
+@import './lumo/margin.css';
+@import './lumo/padding.css';
+@import './lumo/shadow.css';
+@import './lumo/spacing.css';
+@import './lumo/typography.css';
+
+html {
+      --lumo-space-xl: 1.875rem;
+      --lumo-space-l: 1.25rem;
+      --lumo-space-m: 0.625rem;
+      --lumo-space-s: 0.3125rem;
+      --lumo-space-xs: 0.1875rem;
+      --lumo-font-size: 1rem;
+      --lumo-font-size-xxxl: 1.75rem;
+      --lumo-font-size-xxl: 1.375rem;
+      --lumo-font-size-xl: 1.125rem;
+      --lumo-font-size-l: 1rem;
+      --lumo-font-size-m: 0.875rem;
+      --lumo-font-size-s: 0.8125rem;
+      --lumo-font-size-xs: 0.75rem;
+      --lumo-font-size-xxs: 0.6875rem;
+
+    }
+
+    [theme~="dark"] {
+      --lumo-base-color: hsl(214, 80%, 6%);
+
+    }
